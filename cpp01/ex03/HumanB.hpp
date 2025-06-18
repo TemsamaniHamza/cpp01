@@ -12,14 +12,8 @@ class HumanB
         Weapon *wepn;
     public:
         HumanB(std::string name);
-        void setWeapon(Weapon& wpn)
-        {
-            wepn = &wpn;
-        };
-        void attack()
-        {
-            std::cout << name << " attacks with their " << wepn->getType() << std::endl; 
-        };
+        void setWeapon(Weapon& wpn);
+        void attack();
 };
 
 

@@ -14,7 +14,6 @@ class Weapon
         Weapon(std::string type);
         const std::string& getType() const {return type;}
         void setType(std::string n) {type = n;};
-        std::string getType(){return type;};
 }; 
 
 #endif
