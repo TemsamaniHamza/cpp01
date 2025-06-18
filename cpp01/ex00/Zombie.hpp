@@ -8,12 +8,10 @@ class Zombie{
     private:
         std::string name;
     public:
-        void announce( void ) {std::cout<< name << ": BraiiiiiiinnnzzzZ.." << std::endl;};
-        Zombie(std::string name) : name(name) {};
-        Zombie():name("Default"){};
-        ~Zombie(void) {
-            std::cout << "The name of the zombie is " << name << std::endl;
-            };
+        void announce( void );
+        Zombie(std::string name);
+        Zombie();
+        ~Zombie(void);
 };
 
 Zombie* newZombie( std::string name );

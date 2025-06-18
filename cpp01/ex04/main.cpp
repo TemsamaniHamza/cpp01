@@ -26,6 +26,10 @@ int main(int argc, char **argv)
         std::string s1 = argv[2];
         std::string s2 = argv[3];
 
+        if(s1.empty())
+        {
+            std::cout << "s1 shouldn't be empty" << std::endl;
+        }
         std::ifstream infile(file.c_str());
         if(!infile)
         {
@@ -43,8 +47,6 @@ int main(int argc, char **argv)
         {
             outputfile << replacedstr(line, s1, s2) << std::endl;
         }
-        infile.close();
-        outputfile.close();
         return(0);
     }
     std::cout << "You should enter 3 arguments" << std::endl;

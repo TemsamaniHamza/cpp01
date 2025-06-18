@@ -1,4 +1,4 @@
-CC = c++
+CXX = c++
 
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 
@@ -11,10 +11,10 @@ NAME = Myprogram
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(CC) $(CFLAGS) -o $@ $^ 
+	$(CXX) $(CFLAGS) -o $@ $^ 
 
 %.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CXX) $(CFLAGS) -c $< -o $@
 
 clean:
 	rm -f $(OBJ) 
