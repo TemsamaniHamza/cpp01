@@ -9,7 +9,8 @@ class Zombie{
         std::string name;
     public:
         void announce( void ) {std::cout<< name << ": BraiiiiiiinnnzzzZ.." << std::endl;};
-        Zombie(std::string name) : name(name) {}
+        Zombie(std::string name) : name(name) {};
+        Zombie():name("Default"){};
         ~Zombie(void) {
             std::cout << "The name of the zombie is " << name << std::endl;
             };
